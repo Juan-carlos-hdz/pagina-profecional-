@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página Profesional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-sans leading-relaxed text-gray-900">
+  <nav class="fixed w-full bg-white shadow z-10">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#" class="font-bold text-xl">Mi Marca</a>
+      <div class="space-x-4">
+        <a href="#home" class="hover:text-blue-500">Inicio</a>
+        <a href="#about" class="hover:text-blue-500">Sobre mí</a>
+        <a href="#skills" class="hover:text-blue-500">Habilidades</a>
+        <a href="#portfolio" class="hover:text-blue-500">Portafolio</a>
+        <a href="#contact" class="hover:text-blue-500">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="h-screen flex items-center justify-center bg-cover bg-center text-white fade-in" style="background-image:url('https://source.unsplash.com/1600x900/?workspace');">
+    <div class="text-center p-4 bg-black bg-opacity-50 rounded">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Hola, soy [Tu Nombre]</h1>
+      <p class="text-xl md:text-2xl">Desarrollador Web</p>
+    </div>
+  </header>
+
+  <section id="about" class="container mx-auto py-20 px-4 fade-in">
+    <h2 class="text-3xl font-bold mb-6 text-center">Sobre mí</h2>
+    <p class="max-w-2xl mx-auto text-center">Breve descripción profesional y objetivos. Explica tus pasiones, experiencia y lo que te motiva en el campo tecnológico.</p>
+  </section>
+
+  <section id="skills" class="bg-gray-100 py-20 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Habilidades</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <li class="p-4 bg-white shadow rounded">HTML</li>
+        <li class="p-4 bg-white shadow rounded">CSS</li>
+        <li class="p-4 bg-white shadow rounded">JavaScript</li>
+        <li class="p-4 bg-white shadow rounded">React</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio" class="container mx-auto py-20 px-4 fade-in">
+    <h2 class="text-3xl font-bold mb-6 text-center">Portafolio</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 h-48 flex items-center justify-center rounded">Proyecto 1</div>
+      <div class="bg-gray-100 h-48 flex items-center justify-center rounded">Proyecto 2</div>
+      <div class="bg-gray-100 h-48 flex items-center justify-center rounded">Proyecto 3</div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-gray-100 py-20 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contacto</h2>
+      <form class="max-w-xl mx-auto space-y-4">
+        <input type="text" placeholder="Nombre" class="w-full p-3 border rounded" />
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded" />
+        <textarea placeholder="Mensaje" class="w-full p-3 border rounded h-32"></textarea>
+        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; <span id="year"></span> Mi Página Profesional. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
