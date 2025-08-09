@@ -1,56 +1,147 @@
 /* Estilos personalizados complementarios a Tailwind CSS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f8f9fa;
+:root{
+  --c-navy:#1B3059;
+  --c-blue:#2976A6;
+  --c-sky:#7EBFD9;
+  --c-orange:#D98032;
+  --c-red:#D93814;
+  --c-bg:#F7F8FA;
+  --c-text:#111827;
+  --c-muted:#6B7280;
+  --c-white:#FFFFFF;
+  --radius:16px;
+  --shadow:0 8px 24px rgba(0,0,0,.08);
 }
 
-.btn-primario {
-  background-color: #FF5722;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+html,body{
+  background:var(--c-bg);
+  color:var(--c-text);
+  font-family:'Inter',sans-serif;
 }
 
-.btn-primario:hover {
-  background-color: #FF9800;
-}
+a{color:var(--c-blue);}
+a:hover{color:var(--c-navy);}
 
-.habilidad {
-  background-color: #FF9800;
-  color: #fff;
-  transition: background-color 0.3s ease;
-  text-align: center;
-}
+/* Navbar */
+.navbar{background:var(--c-white); border-bottom:1px solid rgba(0,0,0,.06);}
+.navbar a{color:var(--c-text);}
+.navbar a:hover,.navbar .active{color:var(--c-blue);}
+.brand-badge{background:var(--c-navy); border-radius:50%;}
 
-.habilidad:hover {
-  background-color: #00BCD4;
+/* Hero */
+.hero{padding:6rem 1rem;}
+.hero-card{
+  background:var(--c-navy);
+  color:var(--c-white);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
 }
+.hero small{color:var(--c-sky);}
 
-.btn-proyecto {
-  background-color: #00BCD4;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+/* Botones */
+.btn-primario{
+  background:var(--c-blue);
+  color:var(--c-white);
+  border:none;
+  border-radius:12px;
+  padding:.9rem 1.4rem;
+  font-weight:600;
 }
+.btn-primario:hover{background:var(--c-navy);}
 
-.btn-proyecto:hover {
-  background-color: #00838F;
+.btn-acento{
+  background:var(--c-red);
+  color:var(--c-white);
+  border:none;
+  border-radius:12px;
+  padding:.9rem 1.4rem;
+  font-weight:600;
 }
+.btn-acento:hover{background:#b82c10;}
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.btn-secundario{
+  background:var(--c-orange);
+  color:var(--c-white);
+  border:none;
+  border-radius:12px;
+  padding:.9rem 1.4rem;
+  font-weight:600;
 }
+.btn-secundario:hover{filter:brightness(.92);}
 
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
+/* Secciones */
+section h2{color:var(--c-navy);}
+.section-muted{background:linear-gradient(0deg,#ffffff, #eef6fb);}
+
+/* Habilidades */
+.habilidad{
+  background:var(--c-sky);
+  color:var(--c-navy);
+  border-radius:12px;
+  padding:1rem 1.2rem;
+  box-shadow:var(--shadow);
+  transition:background 0.3s ease,transform 0.3s ease;
+  text-align:center;
+}
+.habilidad:hover{transform:translateY(-2px); background:var(--c-blue); color:var(--c-white);}
+
+/* Portafolio */
+.proyecto{
+  background:var(--c-white);
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:1rem;
+  text-align:center;
+}
+.proyecto h3{color:var(--c-navy);}
+.proyecto a{
+  background:var(--c-blue);
+  color:var(--c-white);
+  border-radius:10px;
+  padding:.6rem 1rem;
+  display:inline-block;
+}
+.proyecto a:hover{background:var(--c-navy);}
+
+/* Formulario de contacto */
+#contacto{background:var(--c-white);}
+#contacto h2{color:var(--c-navy);}
+form input,form textarea{
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:0.9rem 1rem;
+  background:#fff;
+}
+form input:focus,form textarea:focus{
+  outline:2px solid var(--c-sky);
+  border-color:var(--c-blue);
+  box-shadow:0 0 0 3px rgba(41,118,166,.15);
+}
+form button{
+  background:var(--c-red);
+  color:#fff;
+  border:none;
+  border-radius:12px;
+  padding:0.9rem 1rem;
+  font-weight:600;
+}
+form button:hover{background:#b82c10;}
+
+/* Footer */
+footer{background:var(--c-navy); color:var(--c-white);}
+footer a{color:var(--c-sky);}
+footer a:hover{color:var(--c-white);}
+
+/* Animaciones */
+.fade-in{
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.show{
+  opacity:1;
+  transform:translateY(0);
 }
