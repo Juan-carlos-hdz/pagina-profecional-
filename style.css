@@ -7,7 +7,7 @@ body {
 }
 
 .btn-primario {
-  background-color: #2563eb;
+  background-color: #D93814;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -17,7 +17,31 @@ body {
 }
 
 .btn-primario:hover {
-  background-color: #1e40af;
+  background-color: #D98032;
+}
+
+.habilidad {
+  background-color: #D98032;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.habilidad:hover {
+  background-color: #2976A6;
+}
+
+.btn-proyecto {
+  background-color: #2976A6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-proyecto:hover {
+  background-color: #1B3059;
 }
 
 .fade-in {
