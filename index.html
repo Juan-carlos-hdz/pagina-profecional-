@@ -16,7 +16,7 @@
         <a href="#home" class="hover:text-blue-500">Inicio</a>
         <a href="#about" class="hover:text-blue-500">Sobre mí</a>
         <a href="#skills" class="hover:text-blue-500">Habilidades</a>
-        <a href="#portfolio" class="hover:text-blue-500">Portafolio</a>
+        <a href="#portafolio" class="hover:text-blue-500">Portafolio</a>
         <a href="#contact" class="hover:text-blue-500">Contacto</a>
       </div>
     </div>
@@ -30,32 +30,34 @@
     </div>
   </header>
 
-  <section id="about" class="container mx-auto py-20 px-4 fade-in">
-    <h2 class="text-3xl font-bold mb-6 text-center">Sobre mí</h2>
-    <p class="max-w-3xl mx-auto text-center">Soy un desarrollador web apasionado por transformar ideas en experiencias digitales atractivas. Me especializo en HTML, CSS, JavaScript y React, siempre buscando optimizar el rendimiento y la experiencia de usuario. Mi objetivo es aportar soluciones creativas y funcionales que ayuden a las personas y empresas a destacar en el mundo digital.</p>
+  <section id="about" class="py-20 px-4 fade-in bg-[#7EBFD9] text-[#1B3059]">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Sobre mí</h2>
+      <p class="max-w-3xl mx-auto text-center">Soy un desarrollador web apasionado por transformar ideas en experiencias digitales atractivas. Me especializo en HTML, CSS, JavaScript y React, siempre buscando optimizar el rendimiento y la experiencia de usuario. Mi objetivo es aportar soluciones creativas y funcionales que ayuden a las personas y empresas a destacar en el mundo digital.</p>
+    </div>
   </section>
 
   <section id="skills" class="bg-gray-100 py-20 fade-in">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold mb-6 text-center">Habilidades</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center p-6 rounded shadow">
+          <img src="icons/html5.svg" alt="HTML5" class="w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">HTML</h3>
           <p class="text-sm">Estructuración semántica de contenido web.</p>
         </div>
-        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS3" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center p-6 rounded shadow">
+          <img src="icons/css3.svg" alt="CSS3" class="w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">CSS</h3>
           <p class="text-sm">Diseños adaptativos y atractivos para todo tipo de dispositivos.</p>
         </div>
-        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center p-6 rounded shadow">
+          <img src="icons/javascript.svg" alt="JavaScript" class="w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">JavaScript</h3>
           <p class="text-sm">Interactividad dinámica del lado del cliente.</p>
         </div>
-        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center p-6 rounded shadow">
+          <img src="icons/react.svg" alt="React" class="w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">React</h3>
           <p class="text-sm">Interfaces de usuario modernas y eficientes.</p>
         </div>
@@ -63,45 +65,39 @@
     </div>
   </section>
 
-  <section id="portfolio" class="container mx-auto py-20 px-4 fade-in">
+  <section id="portafolio" class="container mx-auto py-20 px-4 fade-in">
     <h2 class="text-3xl font-bold mb-6 text-center">Portafolio</h2>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="proyecto bg-white rounded shadow overflow-hidden">
-        <img src="https://via.placeholder.com/400x300?text=Proyecto+1" alt="Proyecto 1" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
-          <p class="text-sm mb-4">Aplicación web para gestión de tareas con React y Firebase.</p>
-          <a href="https://github.com/tuusuario/proyecto1" target="_blank" class="text-blue-600 hover:underline">Ver Proyecto</a>
-        </div>
+      <div class="proyecto bg-white rounded shadow overflow-hidden p-4 text-center">
+        <img src="https://via.placeholder.com/400x300?text=Proyecto+1" alt="Proyecto 1" class="w-full h-48 object-cover mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
+        <p class="text-sm mb-4">Aplicación web para gestión de tareas con React y Firebase.</p>
+        <a href="https://github.com/tuusuario/proyecto1" target="_blank" class="btn-proyecto">Ver Proyecto</a>
       </div>
-      <div class="proyecto bg-white rounded shadow overflow-hidden">
-        <img src="https://via.placeholder.com/400x300?text=Proyecto+2" alt="Proyecto 2" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
-          <p class="text-sm mb-4">Landing page responsiva creada con HTML y CSS.</p>
-          <a href="https://github.com/tuusuario/proyecto2" target="_blank" class="text-blue-600 hover:underline">Ver Proyecto</a>
-        </div>
+      <div class="proyecto bg-white rounded shadow overflow-hidden p-4 text-center">
+        <img src="https://via.placeholder.com/400x300?text=Proyecto+2" alt="Proyecto 2" class="w-full h-48 object-cover mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
+        <p class="text-sm mb-4">Landing page responsiva creada con HTML y CSS.</p>
+        <a href="https://github.com/tuusuario/proyecto2" target="_blank" class="btn-proyecto">Ver Proyecto</a>
       </div>
-      <div class="proyecto bg-white rounded shadow overflow-hidden">
-        <img src="https://via.placeholder.com/400x300?text=Proyecto+3" alt="Proyecto 3" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Proyecto 3</h3>
-          <p class="text-sm mb-4">Sitio de portafolio personal construido con React.</p>
-          <a href="https://github.com/tuusuario/proyecto3" target="_blank" class="text-blue-600 hover:underline">Ver Proyecto</a>
-        </div>
+      <div class="proyecto bg-white rounded shadow overflow-hidden p-4 text-center">
+        <img src="https://via.placeholder.com/400x300?text=Proyecto+3" alt="Proyecto 3" class="w-full h-48 object-cover mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Proyecto 3</h3>
+        <p class="text-sm mb-4">Sitio de portafolio personal construido con React.</p>
+        <a href="https://github.com/tuusuario/proyecto3" target="_blank" class="btn-proyecto">Ver Proyecto</a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="bg-gray-100 py-20 fade-in">
+  <section id="contact" class="py-20 fade-in bg-[#1B3059] text-white">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold mb-4 text-center">Contacto</h2>
       <p class="text-center mb-8">¿Tienes un proyecto o idea en mente? ¡Hablemos!</p>
       <form class="max-w-xl mx-auto space-y-4">
-        <input type="text" placeholder="Tu nombre completo" required class="w-full p-3 border rounded-lg shadow-sm" />
-        <input type="email" placeholder="Tu correo electrónico" required class="w-full p-3 border rounded-lg shadow-sm" />
-        <textarea placeholder="Escribe tu mensaje aquí..." required class="w-full p-3 border rounded-lg shadow-sm h-32"></textarea>
-        <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">Enviar Mensaje</button>
+        <input type="text" placeholder="Tu nombre completo" required class="w-full p-3 border border-[#2976A6] rounded-lg bg-white text-[#1B3059]" />
+        <input type="email" placeholder="Tu correo electrónico" required class="w-full p-3 border border-[#2976A6] rounded-lg bg-white text-[#1B3059]" />
+        <textarea placeholder="Escribe tu mensaje aquí..." required class="w-full p-3 border border-[#2976A6] rounded-lg bg-white text-[#1B3059] h-32"></textarea>
+        <button type="submit" class="w-full py-3 bg-[#D93814] text-white rounded-lg shadow hover:bg-[#D98032]">Enviar Mensaje</button>
       </form>
     </div>
   </section>
