@@ -13,10 +13,10 @@
     <div class="container mx-auto flex justify-between items-center p-4">
       <a href="#home" class="block">
         <span class="brand-badge inline-flex p-1">
-          <img src="icons/LOGOT.jpg" alt="Logo" class="h-10 w-auto" />
+          <img src="icons/LOGO.png" alt="Logo" class="h-12 w-auto" />
         </span>
       </a>
-      <div class="space-x-4">
+      <div class="space-x-5">
         <a href="#home">Inicio</a>
         <a href="#about">Sobre mí</a>
         <a href="#skills">Habilidades</a>
@@ -45,43 +45,43 @@
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold mb-6 text-center">Habilidades</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/html5.svg" alt="HTML5" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/html5.svg" alt="HTML5" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">HTML</h3>
           <p class="text-sm">Estructuración semántica de contenido web.</p>
         </div>
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/css3.svg" alt="CSS3" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/css3.svg" alt="CSS3" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">CSS</h3>
           <p class="text-sm">Diseños adaptativos y atractivos para todo tipo de dispositivos.</p>
         </div>
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/javascript.svg" alt="JavaScript" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/javascript.svg" alt="JavaScript" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">JavaScript</h3>
           <p class="text-sm">Interactividad dinámica del lado del cliente.</p>
         </div>
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/react.svg" alt="React" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/react.svg" alt="React" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">React</h3>
           <p class="text-sm">Interfaces de usuario modernas y eficientes.</p>
         </div>
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/adove.png" alt="Adobe Creative Cloud" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/adove.png" alt="Adobe Creative Cloud" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">Adobe Creative Cloud</h3>
           <p class="text-sm">Diseño y edición profesional con Photoshop, Illustrator, Premiere, After Effects y más.</p>
         </div>
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/blender.png" alt="Blender" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/blender.png" alt="Blender" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">Blender</h3>
           <p class="text-sm">Modelado 3D, animación y renderizado realista.</p>
         </div>
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/unyti.png" alt="Unity" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/unyti.png" alt="Unity" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">Unity</h3>
           <p class="text-sm">Desarrollo de videojuegos multiplataforma.</p>
         </div>
-        <div class="habilidad flex flex-col items-center">
-          <img src="icons/python.png" alt="Python" class="w-12 h-12 mb-3" />
+        <div class="habilidad flex flex-col items-center skill">
+          <img src="icons/python.png" alt="Python" class="skill-icon w-12 h-12 mb-3" />
           <h3 class="font-semibold mb-1">Python</h3>
           <p class="text-sm">Programación versátil para automatización, análisis de datos y desarrollo web.</p>
         </div>
@@ -118,10 +118,45 @@
       <h2 class="text-3xl font-bold mb-4 text-center">Contacto</h2>
       <p class="text-center mb-8">¿Tienes un proyecto o idea en mente? ¡Hablemos!</p>
       <form class="max-w-xl mx-auto space-y-4">
-        <input type="text" placeholder="Tu nombre completo" required class="w-full" />
-        <input type="email" placeholder="Tu correo electrónico" required class="w-full" />
-        <textarea placeholder="Escribe tu mensaje aquí..." required class="w-full h-32"></textarea>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input type="text" placeholder="Tu nombre completo" name="name" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="email" placeholder="Tu correo electrónico" name="email" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <input type="text" placeholder="Asunto (ej. Landing para negocio)" name="subject" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <select name="project_type" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="" disabled selected>Tipo de proyecto</option>
+            <option>Sitio informativo</option>
+            <option>Portafolio</option>
+            <option>Tienda / e-commerce</option>
+            <option>WebApp / Dashboard</option>
+            <option>Otro</option>
+          </select>
+          <select name="timeline" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="" disabled selected>Tiempo objetivo</option>
+            <option>1–2 semanas</option>
+            <option>3–4 semanas</option>
+            <option>1–2 meses</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block mb-1 text-sm font-medium">Presupuesto aproximado</label>
+          <input type="range" name="budget" min="200" max="5000" step="100" value="1200" oninput="budgetOut.value='$'+this.value" class="w-full" />
+          <output id="budgetOut" class="ml-2 text-sm">$1200</output>
+        </div>
+
+        <textarea placeholder="Cuéntame tu idea, objetivos y referencias..." name="message" rows="6" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+        <label class="flex items-center gap-2 text-sm">
+          <input type="checkbox" required />
+          <span>Acepto ser contactado por correo con la propuesta.</span>
+        </label>
         <button type="submit" class="w-full btn-acento">Enviar Mensaje</button>
+        <small class="block text-center text-sm opacity-75">Respuesta estimada: 24–48 h. No comparto tus datos.</small>
       </form>
     </div>
   </section>
