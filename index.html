@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi Página Profesional</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="font-sans leading-relaxed text-gray-900">
+<body class="font-sans leading-relaxed text-gray-900 bg-gray-50">
   <nav class="fixed w-full bg-white shadow z-10">
     <div class="container mx-auto flex justify-between items-center p-4">
       <a href="#" class="font-bold text-xl">Mi Marca</a>
@@ -22,46 +23,85 @@
   </nav>
 
   <header id="home" class="h-screen flex items-center justify-center bg-cover bg-center text-white fade-in" style="background-image:url('https://source.unsplash.com/1600x900/?workspace');">
-    <div class="text-center p-4 bg-black bg-opacity-50 rounded">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Hola,SOY JUAN CARLOS </h1>
-      <p class="text-xl md:text-2xl">Desarrollador Web</p>
+    <div class="text-center p-6 bg-black bg-opacity-50 rounded">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Hola, soy Juan Carlos 👋</h1>
+      <p class="text-xl md:text-2xl mb-6">Desarrollador Web enfocado en crear soluciones modernas, rápidas y atractivas para todo tipo de proyectos.</p>
+      <a href="#portafolio" class="btn-primario">Ver mis proyectos</a>
     </div>
   </header>
 
   <section id="about" class="container mx-auto py-20 px-4 fade-in">
     <h2 class="text-3xl font-bold mb-6 text-center">Sobre mí</h2>
-    <p class="max-w-2xl mx-auto text-center">Breve descripción profesional y objetivos. Explica tus pasiones, experiencia y lo que te motiva en el campo tecnológico.</p>
+    <p class="max-w-3xl mx-auto text-center">Soy un desarrollador web apasionado por transformar ideas en experiencias digitales atractivas. Me especializo en HTML, CSS, JavaScript y React, siempre buscando optimizar el rendimiento y la experiencia de usuario. Mi objetivo es aportar soluciones creativas y funcionales que ayuden a las personas y empresas a destacar en el mundo digital.</p>
   </section>
 
   <section id="skills" class="bg-gray-100 py-20 fade-in">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold mb-6 text-center">Habilidades</h2>
-      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-        <li class="p-4 bg-white shadow rounded">HTML</li>
-        <li class="p-4 bg-white shadow rounded">CSS</li>
-        <li class="p-4 bg-white shadow rounded">JavaScript</li>
-        <li class="p-4 bg-white shadow rounded">React</li>
-      </ul>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5" class="w-12 h-12 mb-3" />
+          <h3 class="font-semibold mb-1">HTML</h3>
+          <p class="text-sm">Estructuración semántica de contenido web.</p>
+        </div>
+        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS3" class="w-12 h-12 mb-3" />
+          <h3 class="font-semibold mb-1">CSS</h3>
+          <p class="text-sm">Diseños adaptativos y atractivos para todo tipo de dispositivos.</p>
+        </div>
+        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript" class="w-12 h-12 mb-3" />
+          <h3 class="font-semibold mb-1">JavaScript</h3>
+          <p class="text-sm">Interactividad dinámica del lado del cliente.</p>
+        </div>
+        <div class="habilidad flex flex-col items-center text-center p-6 bg-white rounded shadow">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 mb-3" />
+          <h3 class="font-semibold mb-1">React</h3>
+          <p class="text-sm">Interfaces de usuario modernas y eficientes.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="portfolio" class="container mx-auto py-20 px-4 fade-in">
     <h2 class="text-3xl font-bold mb-6 text-center">Portafolio</h2>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-gray-100 h-48 flex items-center justify-center rounded">Proyecto 1</div>
-      <div class="bg-gray-100 h-48 flex items-center justify-center rounded">Proyecto 2</div>
-      <div class="bg-gray-100 h-48 flex items-center justify-center rounded">Proyecto 3</div>
+      <div class="proyecto bg-white rounded shadow overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=Proyecto+1" alt="Proyecto 1" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
+          <p class="text-sm mb-4">Aplicación web para gestión de tareas con React y Firebase.</p>
+          <a href="https://github.com/tuusuario/proyecto1" target="_blank" class="text-blue-600 hover:underline">Ver Proyecto</a>
+        </div>
+      </div>
+      <div class="proyecto bg-white rounded shadow overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=Proyecto+2" alt="Proyecto 2" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
+          <p class="text-sm mb-4">Landing page responsiva creada con HTML y CSS.</p>
+          <a href="https://github.com/tuusuario/proyecto2" target="_blank" class="text-blue-600 hover:underline">Ver Proyecto</a>
+        </div>
+      </div>
+      <div class="proyecto bg-white rounded shadow overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=Proyecto+3" alt="Proyecto 3" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Proyecto 3</h3>
+          <p class="text-sm mb-4">Sitio de portafolio personal construido con React.</p>
+          <a href="https://github.com/tuusuario/proyecto3" target="_blank" class="text-blue-600 hover:underline">Ver Proyecto</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="bg-gray-100 py-20 fade-in">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6 text-center">Contacto</h2>
+      <h2 class="text-3xl font-bold mb-4 text-center">Contacto</h2>
+      <p class="text-center mb-8">¿Tienes un proyecto o idea en mente? ¡Hablemos!</p>
       <form class="max-w-xl mx-auto space-y-4">
-        <input type="text" placeholder="Nombre" class="w-full p-3 border rounded" />
-        <input type="email" placeholder="Email" class="w-full p-3 border rounded" />
-        <textarea placeholder="Mensaje" class="w-full p-3 border rounded h-32"></textarea>
-        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Enviar</button>
+        <input type="text" placeholder="Tu nombre completo" required class="w-full p-3 border rounded-lg shadow-sm" />
+        <input type="email" placeholder="Tu correo electrónico" required class="w-full p-3 border rounded-lg shadow-sm" />
+        <textarea placeholder="Escribe tu mensaje aquí..." required class="w-full p-3 border rounded-lg shadow-sm h-32"></textarea>
+        <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">Enviar Mensaje</button>
       </form>
     </div>
   </section>
