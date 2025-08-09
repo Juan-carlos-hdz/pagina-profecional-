@@ -7,7 +7,7 @@ body {
 }
 
 .btn-primario {
-  background-color: #D93814;
+  background-color: #FF5722;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -17,22 +17,22 @@ body {
 }
 
 .btn-primario:hover {
-  background-color: #D98032;
+  background-color: #FF9800;
 }
 
 .habilidad {
-  background-color: #D98032;
+  background-color: #FF9800;
   color: #fff;
   transition: background-color 0.3s ease;
   text-align: center;
 }
 
 .habilidad:hover {
-  background-color: #2976A6;
+  background-color: #00BCD4;
 }
 
 .btn-proyecto {
-  background-color: #2976A6;
+  background-color: #00BCD4;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -41,7 +41,7 @@ body {
 }
 
 .btn-proyecto:hover {
-  background-color: #1B3059;
+  background-color: #00838F;
 }
 
 .fade-in {
