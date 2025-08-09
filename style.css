@@ -28,7 +28,7 @@ a:hover{color:var(--c-navy);}
 .navbar{background:var(--c-white); border-bottom:1px solid rgba(0,0,0,.06);}
 .navbar a{color:var(--c-text);}
 .navbar a:hover,.navbar .active{color:var(--c-blue);}
-.brand-badge{background:var(--c-navy); border-radius:50%;}
+.brand-badge{ border-radius:50%;}
 
 /* Hero */
 .hero{padding:6rem 1rem;}
