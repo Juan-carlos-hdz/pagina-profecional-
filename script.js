@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
   // Animación de aparición para secciones con la clase fade-in
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -30,3 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.fade-in').forEach(elem => observer.observe(elem));
 });
+function openModal(id) {
+  document.getElementById(id).classList.remove("hidden");
+}
+function closeModal(id) {
+  document.getElementById(id).classList.add("hidden");
+}

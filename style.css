@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root{
-  --c-navy:#1B3059;
-  --c-blue:#2976A6;
+  --c-navy:#519DA6;
+  --c-blue:#031926;
   --c-sky:#7EBFD9;
   --c-orange:#D98032;
   --c-red:#D93814;
-  --c-bg:#B3CCFF;
-  --c-text:#386ee4;
+  --c-bg:#031926;
+  --c-text:#519DA6;
   --c-muted:#6B7280;
   --c-white:#FBF1F1;
   --radius:16px;
@@ -25,7 +25,7 @@ a{color:var(--c-blue);}
 a:hover{color:var(--c-navy);}
 
 /* Navbar */
-.navbar{background-color: #1B3059; border-bottom:1px solid rgba(0,0,0,.06);}
+.navbar{background-color: #000; border-bottom:1px solid rgba(0,0,0,.06);}
 .navbar a{color:var(--c-text);}
 .navbar a:hover,.navbar .active{color:var(--c-blue);}
 .brand-badge{ border-radius:50%;}
